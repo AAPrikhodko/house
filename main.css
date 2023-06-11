@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #001525;
+  --secondary-color: #ff9100;
+  --third-color: #e36414;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.house {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 25vw;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.roof {
+  height: 40%;
+  width: 100%;
+  position: relative;
+}
+
+.main-roof {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  background-color: var(--secondary-color);
+}
+
+.tube {
+  width: 10%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  background-color: var(--secondary-color);
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+  height: 60%;
+  background-color: var(--secondary-color);
+}
+
+.wall {
+  display: flex;
+  width: 95%;
+  height: 95%;
+}
+.windows {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 50%;
+}
+
+.window {
+  width: 35%;
+  height: 35%;
+  background-color: var(--primary-color);
+}
+
+.door {
+  align-self: flex-end;
+  position: relative;
+  width: 30%;
+  height: 50%;
+  background-color: var(--third-color);
+}
+
+.handle {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
